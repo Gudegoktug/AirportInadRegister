@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FF8DA70-BAA2-4B9B-96EA-3C19CF44507A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AirportInadRegister</RootNamespace>
+    <AssemblyName>AirportInadRegister</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calısanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calısanlar.Designer.cs">
+      <DependentUpon>Calısanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CelebiInadDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelebiInadDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CelebiInadDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelebiInadDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CelebiInadDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelebiInadDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CelebiInadDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelebiInadDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CelebiInadDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelebiInadDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CelebiInadDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelebiInadDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CelebiInadDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelebiInadDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CelebiInadDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CelebiInadDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GudeInadDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GudeInadDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HavaYolları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HavaYolları.Designer.cs">
+      <DependentUpon>HavaYolları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inad.Designer.cs">
+      <DependentUpon>Inad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InadKayit.cs" />
+    <Compile Include="InadRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InadRegister.Designer.cs">
+      <DependentUpon>InadRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InadSebep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InadSebep.Designer.cs">
+      <DependentUpon>InadSebep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Calısanlar.resx">
+      <DependentUpon>Calısanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HavaYolları.resx">
+      <DependentUpon>HavaYolları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inad.resx">
+      <DependentUpon>Inad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InadRegister.resx">
+      <DependentUpon>InadRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InadSebep.resx">
+      <DependentUpon>InadSebep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="CelebiInadDataSet.xsc">
+      <DependentUpon>CelebiInadDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelebiInadDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelebiInadDataSet.xss">
+      <DependentUpon>CelebiInadDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet11.xsc">
+      <DependentUpon>CelebiInadDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelebiInadDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelebiInadDataSet11.xss">
+      <DependentUpon>CelebiInadDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet2.xsc">
+      <DependentUpon>CelebiInadDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelebiInadDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelebiInadDataSet2.xss">
+      <DependentUpon>CelebiInadDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet3.xsc">
+      <DependentUpon>CelebiInadDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelebiInadDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelebiInadDataSet3.xss">
+      <DependentUpon>CelebiInadDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet4.xsc">
+      <DependentUpon>CelebiInadDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelebiInadDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelebiInadDataSet4.xss">
+      <DependentUpon>CelebiInadDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet5.xsc">
+      <DependentUpon>CelebiInadDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelebiInadDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelebiInadDataSet5.xss">
+      <DependentUpon>CelebiInadDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet6.xsc">
+      <DependentUpon>CelebiInadDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelebiInadDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelebiInadDataSet6.xss">
+      <DependentUpon>CelebiInadDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet7.xsc">
+      <DependentUpon>CelebiInadDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="CelebiInadDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CelebiInadDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CelebiInadDataSet7.xss">
+      <DependentUpon>CelebiInadDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet.xsc">
+      <DependentUpon>GudeInadDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet.xss">
+      <DependentUpon>GudeInadDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet1.xsc">
+      <DependentUpon>GudeInadDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet1.xss">
+      <DependentUpon>GudeInadDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet10.xsc">
+      <DependentUpon>GudeInadDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet10.xss">
+      <DependentUpon>GudeInadDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet11.xsc">
+      <DependentUpon>GudeInadDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet11.xss">
+      <DependentUpon>GudeInadDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet12.xsc">
+      <DependentUpon>GudeInadDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet12.xss">
+      <DependentUpon>GudeInadDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet13.xsc">
+      <DependentUpon>GudeInadDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet13.xss">
+      <DependentUpon>GudeInadDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet14.xsc">
+      <DependentUpon>GudeInadDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet14.xss">
+      <DependentUpon>GudeInadDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet15.xsc">
+      <DependentUpon>GudeInadDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet15.xss">
+      <DependentUpon>GudeInadDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet2.xsc">
+      <DependentUpon>GudeInadDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet2.xss">
+      <DependentUpon>GudeInadDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet3.xsc">
+      <DependentUpon>GudeInadDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet3.xss">
+      <DependentUpon>GudeInadDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet4.xsc">
+      <DependentUpon>GudeInadDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet4.xss">
+      <DependentUpon>GudeInadDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet5.xsc">
+      <DependentUpon>GudeInadDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet5.xss">
+      <DependentUpon>GudeInadDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet6.xsc">
+      <DependentUpon>GudeInadDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet6.xss">
+      <DependentUpon>GudeInadDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet7.xsc">
+      <DependentUpon>GudeInadDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet7.xss">
+      <DependentUpon>GudeInadDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet8.xsc">
+      <DependentUpon>GudeInadDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet8.xss">
+      <DependentUpon>GudeInadDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet9.xsc">
+      <DependentUpon>GudeInadDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="GudeInadDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GudeInadDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GudeInadDataSet9.xss">
+      <DependentUpon>GudeInadDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çelebi logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çelebi icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5664.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Celebi-Kanatli-renkli-Logo-zeminde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çelebi icon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\çelebi logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-celebi-kanatli-tramli-logo-zeminde-kullanim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\celebi_etik_ve_itibar_dernegine_katildi_h13837_37e50.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
